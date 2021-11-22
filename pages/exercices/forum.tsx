@@ -1,9 +1,14 @@
 import type { NextPage } from 'next'
 
-const Exercise4: NextPage = () => {
+const Forum: NextPage = () => {
   return (
-    <p>TODO: Créer le forum ici.</p>
+    <div id="forum-wrapper" className="d-flex flex-column">
+      <div id="messages-container" className="flex-grow-1">
+      </div>
+      <div id="new-message-container">
+      </div>
+    </div>
   )
 }
 
-export default Exercise4
+export default Forum

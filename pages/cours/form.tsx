@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 
 const Form: NextPage = () => {
   return (
-    <form method="post">
+    <form method="post" action="/api/register">
       <div>
         <label htmlFor="lastname">Nom</label>
         <input type="text" id="lastname" name="lastname" placeholder="Nom" />

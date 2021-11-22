@@ -1,24 +1,32 @@
-body #main-content div.box > a,
-a.special {
-  font-size: 18px;
-  font-weight: bold;
-  font-family: sans-serif;
-
-  color: #000;
-  background-color: #fff;
+/* label {
+  color: blue;
 }
 
-body #main-content {
+input[type="text"] {
+  font-size: 32px;
+}
+
+#address-block {
   position: relative;
 }
 
-body #main-content div.box > a,
-a.special {
+#address-block .warning-block {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 100px;
-  height: 100px;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+  color: red;
+} */
 
-  display: block; /*hidden, inline, ...*/
+#forum-wrapper {
+  height: 100vh;
+}
+
+#messages-container {
+  background-color: red;
+}
+
+#new-message-container {
+  height: 150px;
+  background-color: blue;
 }
