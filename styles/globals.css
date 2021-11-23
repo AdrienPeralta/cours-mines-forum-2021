@@ -1,32 +1,11 @@
-/* label {
-  color: blue;
-}
-
-input[type="text"] {
-  font-size: 32px;
-}
-
-#address-block {
-  position: relative;
-}
-
-#address-block .warning-block {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 10px;
-  color: red;
-} */
-
 #forum-wrapper {
   height: 100vh;
 }
 
 #messages-container {
-  background-color: red;
+  overflow: auto;
 }
 
 #new-message-container {
-  height: 150px;
-  background-color: blue;
+  border-top: 1px solid #999;
 }
