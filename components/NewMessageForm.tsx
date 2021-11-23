@@ -34,17 +34,20 @@ const NewMessageForm = () => {
 
         // Refresh messages
         mutate("https://ensmn.herokuapp.com/messages")
+
+        // Clear state
+        setMessage("")
     }
 
     return (
         <form onSubmit={handleSubmit}>
             <div className="mb-3">
                 <label htmlFor="pseudo" className="form-label">Pseudo</label>
-                <input type="text" className="form-control" id="pseudo" name="pseudo" required onChange={handlePseudoChange} />
+                <input type="text" className="form-control" id="pseudo" name="pseudo" required onChange={handlePseudoChange} value={pseudo} />
             </div>
             <div className="mb-3">
                 <label htmlFor="message" className="form-label">Message</label>
-                <textarea rows={5} className="form-control" id="message" required onChange={handleMessageChange}></textarea>
+                <textarea rows={5} className="form-control" id="message" required onChange={handleMessageChange} value={message}></textarea>
             </div>
             <h2>Preview</h2>
             <Message body={message} author={pseudo} date={new Date()} />

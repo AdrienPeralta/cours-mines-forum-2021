@@ -29,7 +29,9 @@ const fetcher = async (url: string) => {
 }
 
 const MessagesList = () => {
-    const { data, error } = useSWR<MessageApi[]>('https://ensmn.herokuapp.com/messages', fetcher)
+    const { data, error } = useSWR<MessageApi[]>('https://ensmn.herokuapp.com/messages', fetcher, {
+        refreshInterval: 30000
+    })
 
     if (error) {
         return <div>failed to load</div>
